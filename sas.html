@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Character Info</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .header {
+            background-color: rgba(135, 206, 235, 0.8); /* Sky blue with some transparency */
+            color: white;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            border-bottom: 2px solid white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header h1 {
+            margin: 0;
+            color: white;
+        }
+        .nav {
+            display: flex;
+            justify-content: space-around;
+            width: 50%;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        /* ... rest of your navigation styles ... */
+        .content {
+            background-color: #ffffff;
+            border: 2px solid #87ceeb; /* Sky blue */
+            padding: 20px;
+            width: 80%;
+            height: 70vh;
+            box-sizing: border-box;
+            overflow-y: auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+        }
+        .character-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 2em;
+            text-align: center;
+        }
+        .character-quote {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.2em;
+            text-align: center;
+            color: gray;
+            font-style: italic;
+        }
+        .character-info {
+            font-weight: bold;
+        }
+        .character-photo {
+            width: 100%;
+            height: 300px; /* Fixed height */
+            object-fit: cover;
+            border: 5px solid #87ceeb; /* Sky blue frame */
+            box-sizing: border-box;
+        }
+        .character-details {
+            list-style-type: none;
+            padding: 0;
+        }
+        .character-details li {
+            margin-bottom: 10px;
+        }
+        .character-details span {
+            font-weight: bold;
+        }
+        .character-section {
+            border-top: 1px solid #87ceeb;
+            padding-top: 10px;
+            margin-top: 10px;
+        }
+        .character-section h2 {
+            text-align: center;
+            color: #87ceeb;
+        }
+        .character-section h2::before {
+            content: '• ';
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Stadt der Hoffnung RolePlay</h1>
+        <div class="nav">
+            <!-- Your navigation goes here -->
+        </div>
+    </div>
+    <div class="content">
+        <div>
+            <h1 class="character-name">Character Name</h1>
+            <p class="character-quote">"This is a character quote."</p>
+            <p class="character-info">Character Name - Some information about the character.</p>
+            <div class="character-section">
+                <h2>Biography</h2>
+                <p>Biography text goes here.</p>
+            </div>
+            <div class="character-section">
+                <h2>Character</h2>
+                <p>Character text goes here.</p>
+            </div>
+            <div class="character-section">
+                <h2>Ability</h2>
+                <p>Ability text goes here.</p>
+            </div>
+            <div class="character-section">
+                <h2>Interesting Facts</h2>
+                <p>Interesting facts go here.</p>
+            </div>
+        </div>
+        <div>
+            <img src="character.jpg" class="character-photo" alt="Character photo">
+            <ul class="character-details">
+                <li><span>Status:</span> Alive</li>
+                <li><span>Organization:</span> The Organization</li>
+                <li><span>Level:</span> 5</li>
+                <li><span>Relationship:</span> Single</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

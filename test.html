@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Character Name - Stadt der Hoffnung RolePlay</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .header {
+            background-color: rgba(135, 206, 235, 0.8); /* Sky blue with some transparency */
+            color: white;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            border-bottom: 2px solid white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header h1 {
+            margin: 0;
+            color: white;
+        }
+        .nav {
+            display: flex;
+            justify-content: space-around;
+            width: 50%;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .dropdown, .dropdown-sub, .dropdown-sub-sub {
+            display: none;
+            position: absolute;
+            background-color: #87ceeb; /* Sky blue */
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown a, .dropdown-sub a, .dropdown-sub-sub a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .nav-item:hover .dropdown,
+        .dropdown-item:hover .dropdown-sub,
+        .dropdown-sub-item:hover .dropdown-sub-sub {
+            display: block;
+        }
+        .dropdown-sub {
+            left: 100%;
+            top: 0;
+        }
+        .dropdown-sub-sub {
+            left: 100%;
+            top: 0;
+        }
+        .content {
+            background-color: #ffffff;
+            border: 2px solid #87ceeb; /* Sky blue */
+            padding: 20px;
+            width: 80%;
+            height: 100vh;
+            box-sizing: border-box;
+            overflow-y: auto;
+        }
+    </style>
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Character Name - Stadt der Hoffnung RolePlay</h1>
+        <div class="nav">
+            <div class="nav-item">
+                <a href="#">City</a>
+                <div class="dropdown">
+                    <a href="#">Basic Info</a>
+                    <div class="dropdown-item">
+                        <a href="#">Districts</a>
+                        <div class="dropdown-sub">
+                            <a href="#">Citizen's Quarter</a>
+                            <a href="#">Studenski Kvartal</a>
+                            <a href="#">Heliosentrum</a>
+                            <a href="#">Dreiländereck</a>
+                            <a href="#">Hranicne Dol</a>
+                            <a href="#">Novi Park</a>
+                        </div>
+                    </div>
+                    <a href="#">Metro</a>
+                </div>
+            </div>
+            <div class="nav-item">
+                <a href="#">Characters</a>
+                <div class="dropdown">
+                    <div class="dropdown-item">
+                        <a href="#">Esperes</a>
+                        <div class="dropdown-sub">
+                            <div class="dropdown-sub-item">
+                                <a href="#">Fifth Levels</a>
+                                <div class="dropdown-sub-sub">
+                                    <a href="#">Jorn Mann</a>
+                                    <a href="#">Skylar del Marler</a>
+                                    <a href="#">Luke Kondrashov</a>
+                                    <a href="#">Vreni von Nürchtag</a>
+                                    <a href="#">Victoria Le British</a>
+                                    <a href="#">Alma Dresdner</a>
+                                </div>
+                            </div>
+                            <div class="dropdown-sub-item">
+                                <a href="#">Experimental</a>
+                                <div class="dropdown-sub-sub">
+                                    <a href="#">Abigail Watson</a>
+                                </div>
+                            </div>
+                            <div class="dropdown-sub-item">
+                                <a href="#">Others</a>
+                                <div class="dropdown-sub-sub">
+                                    <a href="#">Adrien Fakras</a>
+                                    <a href="#">Mila Petrovic</a>
+                                    <a href="#">Elizabeth</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown-item">
+                        <a href="#">Scientists</a>
+                        <div class="dropdown-sub">
+                            <a href="#">Governmental</a>
+                            <a href="#">Independent</a>
+                        </div>
+                    </div>
+                    <div class="dropdown-item">
+                        <a href="#">Zeros</a>
+                        <div class="dropdown-sub">
+                            <div class="dropdown-sub-item">
+                                <a href="#">Ordinary people</a>
+                                <div class="dropdown-sub-sub">
+                                    <a href="#">Marshall Townley</a>
+                                </div>
+                            </div>
+                            <a href="#">Government</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-item">
+                <a href="#">Science</a>
+                <div class="dropdown">
+                    <div class="dropdown-item">
+                        <a href="#">Projects</a>
+                        <div class="dropdown-sub">
+                            <a href="#">The Storm</a>
+                            <a href="#">The Real One Around</a>
+                        </div>
+                    </div>
+                    <a href="#">Experiments</a>
+                    <a href="#">Labs</a>
+                </div>
+            </div>
+            <div class="nav-item">
+                <a href="#">Details</a>
+                <div class="dropdown">
+                    <a href="#">Organizations</a>
+                    <a href="#">Important Events</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <img src="mann.jpg" alt="Character Name" class="image">
+        <h2>Character Name</h2>
+        <p class="quote">"Character Quote"</p>
+        <div class="divider"></div>
+        <p><strong>Table of Contents</strong></p>
+        <ul>
+            <li><a href="#biography">Biography</a></li>
+            <li><a href="#character">Character</a></li>
+            <li><a href="#abilities">Abilities</a></li>
+        </ul>
+        <div class="divider"></div>
+        <div class="section" id="biography">
+            <h3>Biography</h3>
+            <!-- Biography content goes here -->
+        </div>
+        <div class="divider"></div>
+        <div class="section" id="character">
+            <h3>Character</h3>
+            <!-- Character content goes here -->
+        </div>
+        <div class="divider"></div>
+        <div class="section" id="abilities">
+            <h3>Abilities</h3>
+            <!-- Abilities content goes here -->
+        </div>
+    </div>
+</body>
+</html>
